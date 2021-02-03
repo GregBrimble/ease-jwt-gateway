@@ -1,3 +1,8 @@
 CosignProtected On
 AuthType Cosign
 CosignAllowPublicAccess on
+
+RewriteCond %{REQUEST_URI}::$1 ^(.*?/)(.*)::\2$
+RewriteRule ^(.*)$ - [E=BASE:%1]
+
+RewriteRule ^keys/?$ %{ENV:BASE}keys.php [L]
