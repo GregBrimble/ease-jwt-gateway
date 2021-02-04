@@ -47,7 +47,7 @@ GET-ing the `/keys` path returns a [JSON Web Key Set (JWK Set)](https://tools.ie
 
 ### Example
 
-WIP
+[WIP](https://github.com/symptomizer/frontend/blob/master/api/auth/jwt.ts)
 
 <!--
 
